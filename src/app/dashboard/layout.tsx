@@ -1,4 +1,4 @@
-// src/app/(dashboard)/layout.tsx
+'use client';
 import { Header } from "@/components/header";
 import { Sidebar } from "@/components/sidebar";
 import { useAuthStore } from "@/lib/auth";
