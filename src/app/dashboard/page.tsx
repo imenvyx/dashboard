@@ -19,7 +19,7 @@ export default function DashboardPage() {
     queryKey: ["repoData"],
     queryFn: () => fetchReports(),
   });
-  console.log(data?.reports);
+
   // Redirect if not authenticated
   useEffect(() => {
     if (!user) {
