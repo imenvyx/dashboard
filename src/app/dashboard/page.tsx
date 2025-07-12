@@ -4,9 +4,7 @@ import { useAuthStore } from "@/lib/auth";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Loader } from "@/components/loader";
-import { Icons } from "@/components/ui/icons";
 import { ReportSummary } from "./report-summary";
 import { useQuery } from "@tanstack/react-query";
 import { fetchReports } from "@/lib/data";
@@ -47,27 +45,6 @@ export default function DashboardPage() {
           </div>
         </div>
       </div>
-
-      {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-        <Card className="lg:col-span-2">
-          <CardHeader>
-            <CardTitle>Performance Overview</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <LineChart data={reports.line} height={300} />
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Feature Usage</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <BarChart data={dashboardData.usageChart} height={300} />
-          </CardContent>
-        </Card>
-      </div> */}
-
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
         <Card>
           <CardHeader>
